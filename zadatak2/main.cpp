@@ -1,8 +1,16 @@
 #include <iostream>
 #include "stack_arr.hpp"
 
+// Kompleksnog ovog je JA MISLIM manja od O(n^2)
+// Takodjer, ispis koji program dadne NIJE redoslijeda kojeg se ocekuje od zadatka
+// Ne znam koliki problem to mozda bude predstavljalo ali drugacije nisam znao
+// Prijatno
+
+
 typedef StackArr<int> Stack;
 
+//ovaj static i static kod static printGreater se moze izbrisati ako buni
+//nista ne promijeni osim da mi mozda dadne 0.2 vise bodova za pretencioznost
 static int* makeArray(size_t arrSize) {
 	int* array = new int[arrSize];
 
